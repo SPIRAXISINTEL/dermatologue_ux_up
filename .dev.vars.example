@@ -1,0 +1,10 @@
+# Local development only. Use real values in Cloudflare Pages secrets/variables.
+SITE_URL=https://dermatologue-tanger.com
+CF_ACCESS_ISSUER=https://YOUR_TEAM.cloudflareaccess.com
+CF_ACCESS_AUD=YOUR_CLOUDFLARE_ACCESS_APPLICATION_AUD
+DOCTOR_EMAIL=doctor@example.com
+CMS_EDITOR_EMAILS=editor1@example.com,editor2@example.com
+# Existing appointment mail integration:
+RESEND_API_KEY=
+RDV_TO=
+RDV_FROM=

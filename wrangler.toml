@@ -1,0 +1,14 @@
+name = "dermtanger"
+compatibility_date = "2026-10-01"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "dermatologue-tanger-cms"
+database_id = "f66b8595-d025-44e5-bc89-a32f69909509"
+migrations_dir = "migrations"
+
+[vars]
+SITE_URL = "https://dermatologue-tanger.com"
+# Configure these in Cloudflare Pages environment variables, not in source control:
+# CF_ACCESS_AUD, DOCTOR_EMAIL, CMS_EDITOR_EMAILS

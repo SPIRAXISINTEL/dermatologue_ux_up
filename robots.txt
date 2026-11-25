@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /functions/
+Disallow: /admin/
+
+Sitemap: https://dermatologue-tanger.com/sitemap.xml
+Sitemap: https://dermatologue-tanger.com/sitemap-cms.xml

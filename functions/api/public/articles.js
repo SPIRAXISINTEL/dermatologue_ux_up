@@ -1,0 +1,2 @@
+import {json} from "../../_lib/cms.js";
+export async function onRequestGet({env}) {if(!env.DB)return json({items:[]},503);const {results=[]}=await env.DB.prepare("SELECT slug,title,excerpt,category,author_name,published_at,updated_at FROM cms_articles WHERE status='published' ORDER BY published_at DESC LIMIT 100").all();return new Response(JSON.stringify({items:results}),{headers:{"content-type":"application/json; charset=utf-8","cache-control":"public, max-age=120, s-maxage=300"}});}

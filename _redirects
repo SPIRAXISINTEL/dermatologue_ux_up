@@ -1,0 +1,15 @@
+# Redirections — Cloudflare Pages (_redirects)
+# Anciennes ancres / adresses de l'ancien site (une page) vers la nouvelle structure.
+/rendez-vous /contact/ 301
+/docteur.html /docteur/ 301
+/dermatologie.html /dermatologie-medicale-tanger/ 301
+/esthetique.html /medecine-esthetique-tanger/ 301
+/medecine-esthetique.html /medecine-esthetique-tanger/ 301
+
+# Canonical service URLs approved in the 14 November 2026 content brief.
+/dermatologie/ /dermatologie-medicale-tanger/ 301
+/ar/dermatologie/ /ar/dermatologie-medicale-tanger/ 301
+/medecine-esthetique/ /medecine-esthetique-tanger/ 301
+/ar/medecine-esthetique/ /ar/medecine-esthetique-tanger/ 301
+/dermatologie-medicale/ /dermatologie-medicale-tanger/ 301
+/chirurgie-dermatologique/ /chirurgie-dermatologique-tanger/ 301

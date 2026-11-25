@@ -1,0 +1,2 @@
+import {videoPage,pageResponse} from "../_lib/cms.js";
+export async function onRequest({request,env,params}) {if(!env.DB)return new Response("CMS indisponible",{status:503});const item=await env.DB.prepare("SELECT * FROM cms_videos WHERE slug=? AND status='published'").bind(params.slug).first();if(!item)return new Response("Vidéo introuvable",{status:404,headers:{"content-type":"text/plain; charset=utf-8"}});return pageResponse(videoPage(item,env));}
